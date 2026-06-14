@@ -95,10 +95,10 @@ body {
   transition: all 0.3s ease;
 }
 
-.search-wrapper input:focus {
+/* .search-wrapper input:focus {
   box-shadow: 0 10px 30px rgba(28, 44, 91, 0.06);
   border-color: #d2def2;
-}
+} */
 
 .filter-actions {
   display: flex;
@@ -128,21 +128,22 @@ body {
   box-shadow: 0 10px 30px rgba(28, 44, 91, 0.06);
 }
 
-.dropdown-filter i {
+/* .dropdown-filter i {
   font-size: 12px;
-  color: #7482a1;
-}
+  color: #ff0303;
+} */
 
 .sort-btn {
-  border-radius: 50% !important;
-  width: 48px;
-  height: 48px;
+  border-radius: 50% ;
+  /* width: 48px;
+  height: 48px; */
 }
 
 /* --- POKÉMON GRID & CARDS --- */
-.pokemon-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+.pokemon-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); */
   gap: 24px;
   margin-bottom: 40px;
 }
@@ -180,7 +181,6 @@ body {
   border: none;
   color: #b3bdcb;
   font-size: 18px;
-  cursor: pointer;
   transition: color 0.2s;
 }
 
@@ -196,7 +196,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
-  border-radius: 20px;
 }
 
 .grass-theme .image-wrapper {
@@ -240,6 +239,9 @@ body {
   justify-content: center;
 }
 
+.grass-bg {
+  background-color: #d1f9e0;
+}
 
 .dark-bg {
   background-color: #d3d4d7;
@@ -318,10 +320,10 @@ body {
   color: #7482a1;
 }
 
-.type-tag.separator {
+/* .type-tag.separator {
   color: #cbd7ed;
   font-weight: 400;
-}
+} */
 
 .grass-theme .type-tag.grass {
   color: #62b97c;
@@ -335,7 +337,7 @@ body {
   color: #395e6e;
 }
 
-.dark-fire-theme .type-tag.fire {
+.type-tag.fire {
   color: #e96b57;
 }
 
@@ -355,7 +357,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   box-shadow: 0 4px 12px rgba(28, 44, 91, 0.03);
   transition: all 0.25s ease;
 }
@@ -372,8 +373,8 @@ body {
   border: 1px solid rgba(230, 236, 248, 0.7);
   border-radius: 20px;
   padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  justify-content: center;
   gap: 20px;
   margin-bottom: 25px;
 }
@@ -475,4 +476,9 @@ body {
   .main-logo {
     height: 40px;
   }
-}
+
+  .footer-navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+} 
