@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/favicon/Pokeball--Streamline-Kameleon.svg">
+  <title>Pokémon Dashboard</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+  <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.css"
+        rel="stylesheet"
+    >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <!-- Navbar Section -->
+  <div id="main">
+    <header class="nav">
+      <button class="icon-btn" aria-label="Menu"><i class="ri-menu-line"></i></button>
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg" alt="Pokémon Logo" class="main-logo">
+      </div>
+      <button class="icon-btn" aria-label="Toggle Theme"><i class="ri-sun-line"></i></button>
+    </header>
+    
+    <!-- Search and Filter Section -->
+    <section class="search-filter-section">
+      <div class="search-wrapper">
+        <i class="ri-search-line search-icon"></i>
+        <input type="text" placeholder="Search for a Pokémon..." aria-label="Search Pokémon">
+      </div>
+      <div class="filter-actions">
+        <div class="dropdown-filter">
+          <span>Filter by types (1)</span>
+          <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <button class="icon-btn sort-btn" aria-label="Sort"><i class="ri-arrow-down-double-line"></i></button>
+      </div>
+    </section>
+
+
+    <!-- Pokemon Grid Section  -->
+    <div class="pokemon-grid">
+      <div class="pokemon-card grass-theme">
+        <div class="card-header">
+          <span class="pokedex-number">#0908</span>
+          <button class="favorite-btn" aria-label="Favorite"><i class="ri-heart-line"></i></button>
+        </div>
+        <div class="image-wrapper">
+          <div class="type-badge-mini grass-bg"><i class="ri-leaf-fill" style="color: #78C850;"></i></div>
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/908.png" alt="Meowscarada" class="pokemon-img">
+        </div>
+        <div class="card-info">
+          <h3>Meowscarada</h3>
+          <div class="tags-row-grass-bg">
+            <i class="ri-leaf-fill" style="color: #78C850;"></i>
+            <span class="type-tag grass">GRASS</span>
+          </div>
+          <button class="details-btn" aria-label="View details"><i class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+
+
+      <div class="pokemon-card dark-steel-theme">
+        <div class="card-header">
+          <span class="pokedex-number">#0624</span>
+          <button class="favorite-btn" aria-label="Favorite"><i class="ri-heart-line"></i></button>
+        </div>
+        <div class="image-wrapper">
+          <div class="type-badge-mini dark-bg"><i class="ri-settings-fill" style="color: rgb(90, 89, 89);"></i></div>
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/624.png" alt="Pawniard" class="pokemon-img">
+        </div>
+        <div class="card-info">
+          <h3>Pawniard</h3>
+          <div class="tags-row-steel-bg">
+             <i class="ri-settings-fill" style="color: rgb(90, 89, 89);"></i>
+             <div class="type-tag dark">
+            <span>DARK</span>
+            <span>/</span>
+            <span>STEEL</span>
+            </div>
+          </div>
+          <button class="details-btn" aria-label="View details"><i class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+
+      <div class="pokemon-card dark-fire-theme">
+        <div class="card-header">
+          <span class="pokedex-number">#0229</span>
+          <button class="favorite-btn" aria-label="Favorite"><i class="ri-heart-line"></i></button>
+        </div>
+        <div class="image-wrapper">
+          <div class="type-badge-mini fire-bg"><i class="ri-fire-fill" style="color: rgb(248, 69, 69);"></i></div>
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/229.png" alt="Houndoom" class="pokemon-img">
+        </div>
+        <div class="card-info">
+          <h3>Houndoom</h3>
+          <div class="tags-row-fire-bg">
+            <i class="ri-fire-fill" style="color: rgb(248, 69, 69);"></i>
+          <div class="type-tag fire">
+            <span >DARK</span>
+            <span >/</span>
+            <span >FIRE</span>
+          </div>
+          </div>
+          <button class="details-btn" aria-label="View details"><i class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+
+      <div class="pokemon-card dark-psychic-theme">
+        <div class="card-header">
+          <span class="pokedex-number">#0686</span>
+          <button class="favorite-btn" aria-label="Favorite"><i class="ri-heart-line"></i></button>
+        </div>
+        <div class="image-wrapper">
+          <div class="type-badge-mini water-bg"><i class="ri-drop-fill" style="color: #82bae8;"></i></div>
+          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/686.png" alt="Inkay" class="pokemon-img">
+        </div>
+        <div class="card-info">
+          <h3>Inkay</h3>
+          <div class="tags-row-psychic-bg">
+            <i class="ri-drop-fill" style="color: #82bae8;"></i>
+          <div class="type-tag psychic">
+            <span>DARK</span>
+            <span>/</span>
+            <span>PSYCHIC</span>
+          </div>
+          </div>
+          <button class="details-btn" aria-label="View details"><i class="ri-arrow-right-line"></i></button>
+        </div>
+      </div>
+    </div>
+    <!-- Pokemon Grid Section  -->
+
+    <!-- Footer Navigation Section -->
+    <div class="footer-navigation">
+      <div class="nav-item">
+        <div class="nav-icon-wrapper explore-icon">
+          <img src="assets/favicon/Pokeball--Streamline-Kameleon2.svg" alt="Pokeball Icon" style="width: 40px; height: 40px;">
+        </div>
+        <div class="nav-text">
+          <h4>Explore</h4>
+          <p>Discover all your favorite Pokémon</p>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-icon-wrapper filter-icon">
+          <i class="ri-leaf-fill" style="color: #78C850;"></i>
+        </div>
+        <div class="nav-text">
+          <h4>Filter</h4>
+          <p>Find Pokémon by types and abilities</p>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-icon-wrapper collection-icon">
+          <i class="ri-star-fill" style="color: #FFD700;"></i>
+        </div>
+        <div class="nav-text">
+          <h4>Collection</h4>
+          <p>Save and manage your collection</p>
+        </div>
+      </div>
+      <div class="nav-item">
+        <div class="nav-icon-wrapper stats-icon">
+          <i class="ri-bar-chart-fill" style="color: #4FC3F7;"></i>
+        </div>
+        <div class="nav-text">
+          <h4>Stats</h4>
+          <p>View stats and learn about Pokémon</p>
+        </div>
+      </div>
+    </div>
+
+     <!-- Footer Section  -->
+    <div class="copyright-footer">
+      <i class="fa-solid fa-circle-dot pokeball-subtle"></i>
+      <p>&copy; 2026 Pokémon. All rights reserved.</p>
+   
+
+  </div>
+
+</body>
+</html>
