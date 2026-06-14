@@ -50,11 +50,6 @@ body {
   margin-bottom: 35px;
 }
 
-/* .logo-container {
-  display: flex;
-  justify-content: center;
-} */
-
 .main-logo {
   height: 70px;
 }
@@ -95,11 +90,6 @@ body {
   transition: all 0.3s ease;
 }
 
-/* .search-wrapper input:focus {
-  box-shadow: 0 10px 30px rgba(28, 44, 91, 0.06);
-  border-color: #d2def2;
-} */
-
 .filter-actions {
   display: flex;
   gap: 12px;
@@ -128,22 +118,14 @@ body {
   box-shadow: 0 10px 30px rgba(28, 44, 91, 0.06);
 }
 
-/* .dropdown-filter i {
-  font-size: 12px;
-  color: #ff0303;
-} */
-
 .sort-btn {
   border-radius: 50% ;
-  /* width: 48px;
-  height: 48px; */
 }
 
 /* --- POKÉMON GRID & CARDS --- */
 .pokemon-card-grid {
   display: flex;
   flex-wrap: wrap;
-  /* grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); */
   gap: 24px;
   margin-bottom: 40px;
 }
@@ -319,11 +301,6 @@ body {
   letter-spacing: 0.5px;
   color: #7482a1;
 }
-
-/* .type-tag.separator {
-  color: #cbd7ed;
-  font-weight: 400;
-} */
 
 .grass-theme .type-tag.grass {
   color: #62b97c;
